@@ -1,36 +1,34 @@
-
+I see the issue! The markdown formatting is not rendering properly on GitHub because of the way the headers and badges are structured. Let me give you a **simpler, cleaner version** that will display correctly:
 
 ---
 
 ```markdown
-# GaitLock — Real-Time Freezing of Gait Detection for Parkinson's Patients
+# GaitLock – Real-Time Freezing of Gait Detection for Parkinson's Patients
 
-**IMU-Based Machine Learning System for Freezing of Gait (FOG) Detection** · By Somiya khan
+**IMU-Based Machine Learning System for Freezing of Gait (FOG) Detection** · By Somiya Khan
 
-Python scikit-learn NumPy SciPy Pandas Matplotlib Seaborn
-
-⚠️ **Note:** This tool is designed for research and educational purposes only. It is not intended for clinical diagnosis or regulatory decision-making.
+> ⚠️ **Note:** This tool is designed for research and educational purposes only. It is not intended for clinical diagnosis or regulatory decision-making.
 
 ---
 
 ## 📌 Table of Contents
 
-- [Overview](#-overview)
-- [Model Performance](#-model-performance)
-- [Dataset](#-dataset)
-- [Feature Engineering](#-feature-engineering)
-- [How It Works](#-how-it-works)
-- [Technology Stack](#-technology-stack)
-- [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Author](#-author)
-- [License](#-license)
+- [Overview](#overview)
+- [Model Performance](#model-performance)
+- [Dataset](#dataset)
+- [Feature Engineering](#feature-engineering)
+- [How It Works](#how-it-works)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Author](#author)
+- [License](#license)
 
 ---
 
 ## 🔬 Overview
 
-**GaitLock** is a machine learning system that detects **Freezing of Gait (FOG)** — a debilitating symptom in advanced Parkinson's disease — using wearable IMU sensor data. The system processes 9-axis acceleration signals and achieves **98.9% AUC** in distinguishing normal gait from freezing episodes.
+**GaitLock** is a machine learning system that detects **Freezing of Gait (FOG)** — a debilitating symptom in advanced Parkinson's disease — using wearable IMU sensor data. The system processes 9-axis acceleration signals from the Daphnet Freezing of Gait Dataset and achieves **98.9% AUC** in distinguishing normal gait from freezing episodes.
 
 ### Key Features
 
@@ -57,10 +55,10 @@ Python scikit-learn NumPy SciPy Pandas Matplotlib Seaborn
 
 ### Confusion Matrix
 
-|                      | Predicted Normal | Predicted Freeze |
-|:---------------------|:----------------:|:----------------:|
-| **Actual Normal**     | 1,394 (97.7%)    | 33 (2.3%)        |
-| **Actual Freeze**     | 13 (15.9%)       | 69 (84.1%)       |
+|  | Predicted Normal | Predicted Freeze |
+|:--|:----------------:|:----------------:|
+| **Actual Normal** | 1,394 (97.7%) | 33 (2.3%) |
+| **Actual Freeze** | 13 (15.9%) | 69 (84.1%) |
 
 ---
 
@@ -117,39 +115,22 @@ Python scikit-learn NumPy SciPy Pandas Matplotlib Seaborn
 ## ⚙️ How It Works
 
 ```
-┌─────────────────┐
-│  IMU Sensors    │
-│ (Ankle/Thigh/   │
-│  Trunk)         │
-└────────┬────────┘
+IMU Sensors (Ankle/Thigh/Trunk)
+         │
          ▼
-┌─────────────────┐
-│  Sliding Window │
-│  (2.5 sec, 64Hz)│
-└────────┬────────┘
+  Sliding Window (2.5 sec, 64 Hz)
+         │
          ▼
-┌─────────────────┐
-│  Feature        │
-│  Extraction     │
-│  (117 features) │
-└────────┬────────┘
+  Feature Extraction (117 features)
+         │
          ▼
-┌─────────────────┐
-│  Standardization│
-│  (Z-score)      │
-└────────┬────────┘
+     Standardization (Z-score)
+         │
          ▼
-┌─────────────────┐
-│  Random Forest  │
-│  Classifier     │
-│  (200 trees)    │
-└────────┬────────┘
+   Random Forest Classifier (200 trees)
+         │
          ▼
-┌─────────────────┐
-│  FOG Prediction │
-│  (0=Normal,     │
-│   1=Freeze)     │
-└─────────────────┘
+   FOG Prediction (0=Normal, 1=Freeze)
 ```
 
 ### Model Architecture
@@ -197,7 +178,7 @@ pip install -r requirements.txt
 ### 3. Download Dataset
 
 Download the **Daphnet Freezing of Gait Dataset** from:
-🔗 [UCI Machine Learning Repository](https://archive.ics.uci.edu/static/public/245/daphnet+freezing+of+gait.zip)
+[https://archive.ics.uci.edu/static/public/245/daphnet+freezing+of+gait.zip](https://archive.ics.uci.edu/static/public/245/daphnet+freezing+of+gait.zip)
 
 ### 4. Run the Notebook
 
@@ -214,16 +195,13 @@ gaitlock-fog-detection/
 │
 ├── GaitLock_Real_Time_Freezing_Detection.ipynb   # Main analysis notebook
 │
-├── models/
-│   ├── fog_detection_model.pkl                   # Trained Random Forest
-│   └── scaler.pkl                                # StandardScaler
+├── fog_detection_model.pkl                       # Trained Random Forest
+├── scaler.pkl                                    # StandardScaler
+├── fog_detection_report.txt                      # Performance summary
 │
-├── reports/
-│   ├── fog_detection_report.txt                  # Performance summary
-│   ├── confusion_matrix.png                      # Confusion matrix
-│   ├── roc_curve.png                             # ROC curve
-│   └── feature_importance.png                    # Top features
-│
+├── confusion_matrix.png                          # Confusion matrix
+├── roc_curve.png                                 # ROC curve
+├── feature_importance.png                        # Top features
 ├── data_exploration.png                          # Signal visualization
 │
 ├── requirements.txt                              # Python dependencies
@@ -234,7 +212,7 @@ gaitlock-fog-detection/
 
 ## 👩‍🔬 Author
 
-**Your Name**
+**Somiya Khan**
 
 - **Project:** GaitLock — Real-Time Freezing of Gait Detection for Parkinson's Patients
 - **Field:** Biomedical Engineering / Rehabilitation Engineering
@@ -249,7 +227,7 @@ This project is licensed under the **MIT License**.
 ```
 MIT License
 
-Copyright (c) 2025 [Your Name]
+Copyright (c) 2025 Somiya Khan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -271,4 +249,3 @@ in the Software without restriction...
 
 ---
 
-This is a **complete, copy-paste ready GitHub README** in proper markdown format. Just replace `[Your Name]` with your actual name and `yourusername` with your GitHub username.
