@@ -1,8 +1,8 @@
-I see the issue! The markdown formatting is not rendering properly on GitHub because of the way the headers and badges are structured. Let me give you a **simpler, cleaner version** that will display correctly:
 
----
 
-```markdown
+
+
+
 # GaitLock – Real-Time Freezing of Gait Detection for Parkinson's Patients
 
 **IMU-Based Machine Learning System for Freezing of Gait (FOG) Detection** · By Somiya Khan
