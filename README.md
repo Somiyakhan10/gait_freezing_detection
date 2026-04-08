@@ -1,6 +1,4 @@
-You're right — let me give you a **clean, ready-to-copy-paste GitHub README** in proper markdown format, just like the PoreScope example you shared.
 
-Here it is:
 
 ---
 
