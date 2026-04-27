@@ -16,15 +16,7 @@
 - [Model Performance](#-model-performance)
 - [Dataset](#-dataset)
 - [Feature Engineering](#-feature-engineering)
-- [How It Works](#-how-it-works)
-- [Technology Stack](#-technology-stack)
-- [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Results](#-results)
-- [Future Work](#-future-work)
-- [Author](#-author)
-- [License](#-license)
-
+  
 ---
 
 ## 🔬 Overview
