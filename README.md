@@ -1,7 +1,6 @@
 # GaitLock — Real-Time Freezing of Gait Detection for Parkinson's Patients
 
-**IMU-Based Machine Learning System for Freezing of Gait (FOG) Detection** · By Somiya Khan
-
+**IMU-Based Machine Learning System for Freezing of Gait (FOG) Detection** 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2%2B-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -107,6 +106,10 @@ Freezing of Gait is a sudden, temporary inability to move the feet forward while
 
 <img width="1800" height="900" alt="feature_importance" src="https://github.com/user-attachments/assets/bfb5d280-8e58-4428-b714-35098f75536b" />
 
+### Model Results
+<img width="2682" height="1481" alt="model_results (1)" src="https://github.com/user-attachments/assets/e5dc7e61-421b-4975-851a-c083232b08e0" />
+
+
 
 ### Top 10 Feature Importances
 
@@ -147,7 +150,8 @@ Freezing of Gait is a sudden, temporary inability to move the feet forward while
 
 ### Signal Visualization
 
-<img width="2100" height="1500" alt="data_exploration" src="https://github.com/user-attachments/assets/42f4f064-412b-4b56-9517-236e6569b884" />
+<img width="2233" height="1780" alt="data_visualization" src="https://github.com/user-attachments/assets/55c83fc0-dca0-45ea-9708-1bfe0f91782a" />
+
 
 
 ---
